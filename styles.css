@@ -116,6 +116,9 @@ body {
 .carousel-item.active{
     display: flex !important; 
 }
+/* .carousel-item{
+    display: flex !important; 
+} */
 
 .carousel-inner {
     width: 32vw !important;
@@ -224,12 +227,12 @@ body {
   .carousel-item {
     text-align: center;
     justify-content: center;
-    height: 42vh;
+    height: 40vh;
     /* background-color: red; */
   }
   
   .card1 {
-    height: 42vh;
+    height: 40vh;
     width: 80%;
     align-self: center;
     text-align: center;
@@ -328,6 +331,7 @@ body {
       .info{
           font-size: 2rem;
           line-height: 3rem;
+          margin-top: 4rem;
       }
       .profile-name{
           font-size: 1.8rem;
