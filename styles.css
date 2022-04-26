@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: 'Kameron', serif;
 }
 
@@ -31,6 +30,13 @@ body {
 }
 
 #backGround {
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+}
+#backGroundMobile {
+    display: none;
     position: absolute;
     z-index: -1;
     height: 100vh;
@@ -71,6 +77,27 @@ body {
         opacity: 1.0;
     }
 }
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0px 0px 4px #C6B412);
+    }
+
+    30% {
+        filter: drop-shadow(0px 0px 9px #C6B412);
+    }
+
+    50% {
+        filter: drop-shadow(0px 0px 2px #C6B412);
+    }
+
+    70% {
+        filter: drop-shadow(0px 0px 8px #C6B412);
+    }
+
+    100% {
+        filter: drop-shadow(0px 0px 4px #C6B412);
+    }
+}
 
 .content {
     margin-block: 2.5rem;
@@ -80,23 +107,20 @@ body {
     letter-spacing: 0.8rem;
     filter: drop-shadow(0px 0px 4px #C6B412);
     letter-spacing: 0.12em;
+    animation: glow 5s infinite;
+}
+.content h3{
+    font-size: 4rem;
 }
 
-.caroContainer {
-    margin-top: 2rem;
-    overflow: hidden;
-    /* display: flex; */
-    width: 32vw;
+.carousel-item.active{
+    display: flex !important; 
+}
+
+.carousel-inner {
+    width: 32vw !important;
     height: 20vw;
     margin: 0 auto;
-    position: relative;
-    border-radius: 19px;
-    /* width: 100%; */
-}
-
-.caroSection {
-    width: 160vw;
-    height: 20vw;
     display: flex;
     transition: transform 0.7s ease;
 }
@@ -105,7 +129,6 @@ body {
     position: absolute;
     z-index: 2;
     cursor: pointer;
-    /* transform: rotate(90deg); */
     top: 40%;
 }
 
@@ -118,11 +141,11 @@ body {
     left: 5%;
 }
 
-.images {
+.carousel-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32vw;
+    width: 32vw  !important;
     height: 20vw;
     background: radial-gradient(167.62% 167.62% at 62.63% -21.21%, #4B0E0E 0%, rgba(75, 14, 14, 0) 100%);
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
@@ -134,12 +157,8 @@ body {
     font-size: 1.7rem;
 }
 
-.images div {
-    margin: auto;
-}
-
 .info {
-    margin-top: 1rem;
+    margin-top: 3rem;
     color: #C6B412;
     text-align: center;
     font-size: 3rem;
@@ -168,3 +187,153 @@ body {
 .special{
     background: rgba(148, 28, 28, 0.74);
 }
+.carousel-indicators li{
+    cursor: pointer;
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 1rem !important; 
+    border-radius: 10px !important;
+    background-color: rgb(213,208,207) !important;
+    transition: all 0.7s;
+    background-clip: unset !important;
+    background-clip: unset !important;
+    box-sizing: border-box !important;
+    opacity: 1 !important;
+    transition: all 0.7s !important;
+}
+.carousel-indicators li.active{
+    background: rgba(148, 28, 28, 0.74) !important;
+}
+.carousel-indicators{
+    bottom: -50px !important;
+}
+.card1 {
+    min-width: 80%;
+    height: 20%;
+    border-radius: 1em;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2.5%;
+    margin: 0 10%;
+  }
+  
+  .carousel-item {
+    text-align: center;
+    justify-content: center;
+    height: 42vh;
+    /* background-color: red; */
+  }
+  
+  .card1 {
+    height: 42vh;
+    width: 80%;
+    align-self: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0 2% 4%;
+    border-radius: 10px;
+  
+  
+    /* background: rgb(237 237 237 / 97%); */
+
+  }
+    
+  .names {
+    width: 16vw;
+    height: 14vw;
+    border-radius: 50%;
+    background-image: url();
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    z-index: 3;
+    box-shadow: 0px 10px 10px -3px rgb(0, 0, 0, 0.25);
+  }
+  
+  
+  
+  .profile-info {
+    height: 50%;
+    width: 60%;
+    margin-bottom: 1vh;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 100;
+  }
+  
+  .profile-info p {
+    margin-bottom: 0;
+    font-weight: 100;
+  }
+  
+  .profile-name {
+    font-size: 1.5vw;
+    margin: 10px auto;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 5%;
+  }
+  
+  p {
+    color: white;
+    font-size: 1.5rem;
+    /* font-family: "Poppins", sans-serif; */
+    margin-top: 0;
+  }
+
+  @media screen and (max-width: 768px) and (min-width:0px) {
+      #backGround{
+          display: none;
+      }
+      #backGroundMobile{
+          display: block;
+      }
+      .light.off{
+          display: none;
+      }
+      .but{
+          display: none;
+      }
+      .carousel-indicators li{
+          margin-right: 0.4rem !important;
+      }
+      .carousel-item{
+          height: 35vh;
+          width: 80vw !important;
+      }
+      .carousel-inner{
+          height: 35vh;
+          width: 80vw !important;
+      }
+      .card1{
+          height: 35vh;
+      }
+      .carousel-indicators{
+          bottom: -50px !important;
+      }
+      .content h3{
+          font-size: 2.5rem;
+          margin-inline: 1rem;
+      }
+      .info{
+          font-size: 2rem;
+          line-height: 3rem;
+      }
+      .profile-name{
+          font-size: 1.8rem;
+      }
+      .names{
+          width: 25vw;
+          height: 25vw;
+      }
+  }

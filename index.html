@@ -4,105 +4,178 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0"> 
     <title>DVM Farewell '22</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Assets/DVM-logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kameron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="wrapper">
         <img id="backGround" src="Assets/Lights And Seats.png" alt="">
+        <img id="backGroundMobile" src="Assets/Group 42.png" alt="">
         <div class="lights">
+            <div class="light off reverse"></div>
+            <div class="light"></div>
+            <div class="light off"></div>
             <div class="light reverse"></div>
-            <div class="light"></div>
-            <div class="light"></div>
+            <div class="light off"></div>
             <div class="light reverse"></div>
+            <div class="light off"></div>
+            <div class="light off reverse"></div>
             <div class="light"></div>
-            <div class="light reverse"></div>
+            <div class="light off"></div>
+            <div class="light off reverse"></div>
             <div class="light"></div>
-            <div class="light reverse"></div>
-            <div class="light"></div>
-            <div class="light"></div>
-            <div class="light reverse"></div>
-            <div class="light"></div>
-            <div class="light reverse"></div>
-            <div class="light"></div>
+            <div class="light off reverse"></div>
+            <div class="light off"></div>
         </div>
         <div class="content">
             <h3>FAREWELL '22</h3>
         </div>
-        <div class="caroContainer">
-            
-            <!-- <div class="caroImages">
-                
-            </div> -->
-           <div class="caroSection">
-            <div class="images">
-                <div class="leftContent">
-                    Image Here
+        <!-- <div class="caroContainer"> -->
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="profile1" data-bs-interval="3000">
+                    <div class="card1">
+                        <div class="names"></div>
+                        <div class="profile-info">
+                            <h1 class="profile-name">Name1</h1>
+
+                            <p>Backend</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="rightContent">
-                    <h3>NAME1</h3>
-                    <p>Department</p>
+                <div class="carousel-item" id="profile2" data-bs-interval="3000">
+                    <div class="card1">
+                        <div class="names"></div>
+                        <div class="profile-info">
+                            <h1 class="profile-name">Name2</h1>
+
+
+                            <p>Frontend</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="profile3" data-bs-interval="3000">
+                    <div class="card1">
+                        <div class="names"></div>
+                        <div class="profile-info">
+                            <h1 class="profile-name">Name3</h1>
+
+                            <p>Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="profile4" data-bs-interval="3000">
+                    <div class="card1">
+                        <div class="names"></div>
+                        <div class="profile-info">
+                            <h1 class="profile-name">Name4</h1>
+
+                            <p>Backend</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="profile5" data-bs-interval="3000">
+                    <div class="card1">
+                        <div class="names"></div>
+                        <div class="profile-info">
+                            <h1 class="profile-name">Name5</h1>
+
+                            <p>AppDev</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="profile6" data-bs-interval="3000">
+                    <div class="card1">
+                        <div class="names"></div>
+                        <div class="profile-info">
+                            <h1 class="profile-name">Name6</h1>
+
+                            <p>Video</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="profile7" data-bs-interval="3000">
+                    <div class="card1">
+                        <div class="names"></div>
+                        <div class="profile-info">
+                            <h1 class="profile-name">Name7</h1>
+
+                            <p>Video</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="profile8" data-bs-interval="3000">
+                    <div class="card1">
+                        <div class="names"></div>
+                        <div class="profile-info">
+                            <h1 class="profile-name">Name8</h1>
+
+                            <p>Backend</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="profile9" data-bs-interval="3000">
+                    <div class="card1">
+                        <div class="names"></div>
+                        <div class="profile-info">
+                            <h1 class="profile-name">Name9</h1>
+
+                            <p>AppDev</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="profile10" data-bs-interval="3000">
+                    <div class="card1">
+                        <div class="names"></div>
+                        <div class="profile-info">
+                            <h1 class="profile-name">Name10</h1>
+
+                            <p>Backend</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="images">
-                <div class="leftContent">
-                    Image Here
-                </div>
-                <div class="rightContent">
-                    <h3>NAME2</h3>
-                    <p>Department</p>
-                </div>
-            </div>
-            <div class="images">
-                <div class="leftContent">
-                    Image Here
-                </div>
-                <div class="rightContent">
-                    <h3>NAME3</h3>
-                    <p>Department</p>
-                </div>
-            </div>
-            <div class="images">
-                <div class="leftContent">
-                    Image Here
-                </div>
-                <div class="rightContent">
-                    <h3>NAME4</h3>
-                    <p>Department</p>
-                </div>
-            </div>
-            <div class="images">
-                <div class="leftContent">
-                    Image Here
-                </div>
-                <div class="rightContent">
-                    <h3>NAME5</h3>
-                    <p>Department</p>
-                </div>
-            </div>
-            
-           </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <div class="but prev"><img src="Assets/Triangle.png" alt=""></div>
+
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <div class="but next"><img src="Assets/Triangle.png" alt=""></div>
+
+            </a>
         </div>
-        <div class="map">
-            <div class="mapDiv special" id="01">&nbsp;</div>
-            <div class="mapDiv" id="02">&nbsp;</div>
-            <div class="mapDiv" id="03">&nbsp;</div>
-            <div class="mapDiv" id="04">&nbsp;</div>
-            <div class="mapDiv" id="05">&nbsp;</div>
-        </div>
-        <div class="but prev"><img src="Assets/Triangle.png" alt=""></div>
-        <div class="but next"><img src="Assets/Triangle.png" alt=""></div>
         <div class="info">
             3rd May <span>|</span> 6 PM <br> Sharma's
         </div>
     </div>
 </body>
 <script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
 </html>
