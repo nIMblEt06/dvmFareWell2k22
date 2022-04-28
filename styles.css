@@ -364,12 +364,12 @@ p {
     }
 
     .carousel-item {
-        height: 28vh;
+        height: 25vh;
         width: 80vw !important;
     }
 
     .carousel-inner {
-        height: 25vh;
+        /* height: 25vh; */
         width: 80vw !important;
     }    
 
