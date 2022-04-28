@@ -369,12 +369,12 @@ p {
     }
 
     .carousel-inner {
-        height: 28vh;
+        height: 25vh;
         width: 80vw !important;
     }    
 
     .card1 {
-        height: 28vh;
+        height: 25vh;
     }
 
     .carousel-indicators {
