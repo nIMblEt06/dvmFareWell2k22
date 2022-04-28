@@ -35,6 +35,7 @@ body {
     height: 100vh;
     width: 100vw;
 }
+
 #backGroundMobile {
     display: none;
     position: absolute;
@@ -77,6 +78,7 @@ body {
         opacity: 1.0;
     }
 }
+
 @keyframes glow {
     0% {
         filter: drop-shadow(0px 0px 4px #C6B412);
@@ -109,23 +111,26 @@ body {
     letter-spacing: 0.12em;
     animation: glow 5s infinite;
 }
-.content h3{
+
+.content h3 {
     font-size: 4rem;
 }
 
-.carousel-item.active{
-    display: flex !important; 
+.carousel-item.active {
+    display: flex !important;
 }
+
 /* .carousel-item{
     display: flex !important; 
 } */
 
 .carousel-inner {
     width: 32vw !important;
-    height: 20vw;
+    /* height: 20vw; */
     margin: 0 auto;
+    border-radius: 20px;
     display: flex;
-    transition: transform 0.7s ease;
+    /* transition: transform 0.7s ease; */
 }
 
 .but {
@@ -148,12 +153,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32vw  !important;
+    width: 32vw !important;
     height: 20vw;
-    background: radial-gradient(167.62% 167.62% at 62.63% -21.21%, #4B0E0E 0%, rgba(75, 14, 14, 0) 100%);
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    /* background: radial-gradient(167.62% 167.62% at 62.63% -21.21%, #4B0E0E 0%, rgba(75, 14, 14, 0) 100%);
     filter: drop-shadow(0px 3px 30px rgba(0, 0, 0, 0.25));
-    backdrop-filter: blur(80px);
+    backdrop-filter: blur(80px); */
     border-radius: 19px;
     color: white;
     line-height: 2rem;
@@ -173,30 +177,42 @@ body {
     color: white;
     font-size: 3rem;
 }
+
 .map {
     justify-content: center;
     margin-block: 1.2rem;
     display: flex;
     gap: 0.8rem;
 }
-.mapDiv{
+
+.mapDiv {
     cursor: pointer;
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background-color: rgb(213,208,207);
+    background-color: rgb(213, 208, 207);
     transition: all 0.7s;
 }
-.special{
+
+.special {
     background: rgba(148, 28, 28, 0.74);
 }
-.carousel-indicators li{
+
+.carousel-control-prev {
+    width: fit-content !important;
+}
+
+.carousel-control-next {
+    width: fit-content !important;
+}
+
+.carousel-indicators li {
     cursor: pointer;
     width: 20px !important;
     height: 20px !important;
-    margin-right: 1rem !important; 
+    margin-right: 1rem !important;
     border-radius: 10px !important;
-    background-color: rgb(213,208,207) !important;
+    background-color: rgb(213, 208, 207) !important;
     transition: all 0.7s;
     background-clip: unset !important;
     background-clip: unset !important;
@@ -204,16 +220,18 @@ body {
     opacity: 1 !important;
     transition: all 0.7s !important;
 }
-.carousel-indicators li.active{
+
+.carousel-indicators li.active {
     background: rgba(148, 28, 28, 0.74) !important;
 }
-.carousel-indicators{
+
+.carousel-indicators {
     bottom: -50px !important;
 }
+
 .card1 {
     min-width: 80%;
     height: 20%;
-    border-radius: 1em;
     text-align: center;
 
     display: flex;
@@ -221,19 +239,24 @@ body {
     align-items: center;
     flex-direction: column;
     padding-top: 2.5%;
-    margin: 0 10%;
-  }
-  
-  .carousel-item {
+    margin: 0 3%;
+
+    background: radial-gradient(167.62% 167.62% at 62.63% -21.21%, #4B0E0E 0%, rgba(75, 14, 14, 0) 100%);
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    filter: drop-shadow(0px 3px 30px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(80px);
+}
+
+.carousel-item {
     text-align: center;
     justify-content: center;
     height: 40vh;
     /* background-color: red; */
-  }
-  
-  .card1 {
+}
+
+.card1 {
     height: 40vh;
-    width: 80%;
+    width: 94%;
     align-self: center;
     text-align: center;
     display: flex;
@@ -241,14 +264,14 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2% 0 2% 4%;
-    border-radius: 10px;
-  
-  
+    border-radius: 20px;
+
+
     /* background: rgb(237 237 237 / 97%); */
 
-  }
-    
-  .names {
+}
+
+.names {
     width: 16vw;
     height: 14vw;
     border-radius: 50%;
@@ -259,11 +282,11 @@ body {
     display: flex;
     z-index: 3;
     box-shadow: 0px 10px 10px -3px rgb(0, 0, 0, 0.25);
-  }
-  
-  
-  
-  .profile-info {
+}
+
+
+
+.profile-info {
     height: 50%;
     width: 60%;
     margin-bottom: 1vh;
@@ -272,72 +295,92 @@ body {
     justify-content: center;
     flex-direction: column;
     z-index: 100;
-  }
-  
-  .profile-info p {
+}
+
+.profile-info p {
     margin-bottom: 0;
     font-weight: 100;
-  }
-  
-  .profile-name {
+}
+
+.profile-name {
     font-size: 1.5vw;
     margin: 10px auto;
     color: white;
     font-weight: 600;
     margin-bottom: 5%;
-  }
-  
-  p {
+}
+
+p {
     color: white;
     font-size: 1.5rem;
     /* font-family: "Poppins", sans-serif; */
     margin-top: 0;
-  }
+}
 
-  @media screen and (max-width: 768px) and (min-width:0px) {
-      #backGround{
-          display: none;
-      }
-      #backGroundMobile{
-          display: block;
-      }
-      .light.off{
-          display: none;
-      }
-      .but{
-          display: none;
-      }
-      .carousel-indicators li{
-          margin-right: 0.4rem !important;
-      }
-      .carousel-item{
-          height: 35vh;
-          width: 80vw !important;
-      }
-      .carousel-inner{
-          height: 35vh;
-          width: 80vw !important;
-      }
-      .card1{
-          height: 35vh;
-      }
-      .carousel-indicators{
-          bottom: -50px !important;
-      }
-      .content h3{
-          font-size: 2.5rem;
-          margin-inline: 1rem;
-      }
-      .info{
-          font-size: 2rem;
-          line-height: 3rem;
-          margin-top: 4rem;
-      }
-      .profile-name{
-          font-size: 1.8rem;
-      }
-      .names{
-          width: 25vw;
-          height: 25vw;
-      }
-  }
+@media screen and (max-width: 768px) and (min-width:0px) {
+    #backGround {
+        display: none;
+    }
+
+    #backGroundMobile {
+        display: block;
+    }
+
+    .light.off {
+        display: none;
+    }
+
+    .but {
+        display: none;
+    }
+
+    .carousel-indicators li {
+        margin-right: 0.4rem !important;
+    }
+
+    .carousel-item {
+        height: 35vh;
+        width: 80vw !important;
+    }
+
+    .carousel-inner {
+        height: 35vh;
+        width: 80vw !important;
+    }
+
+    .card1 {
+        height: 35vh;
+    }
+
+    .carousel-indicators {
+        bottom: -50px !important;
+    }
+
+    .content h3 {
+        font-size: 2.5rem;
+        margin-inline: 1rem;
+    }
+
+    .info {
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-top: 4rem;
+    }
+
+    .profile-name {
+        font-size: 1.8rem;
+    }
+
+    .names {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .carousel-control-prev {
+        display: none !important;
+    }
+
+    .carousel-control-next {
+        display: none !important;
+    }
+}
