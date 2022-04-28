@@ -275,8 +275,8 @@ body {
     width: 16vw;
     height: 14vw;
     border-radius: 50%;
-    background-image: url();
     background-size: cover;
+    
     text-align: center;
     justify-content: center;
     display: flex;
@@ -284,8 +284,30 @@ body {
     box-shadow: 0px 10px 10px -3px rgb(0, 0, 0, 0.25);
 }
 
+.anupam{
+    background-image: url("Assets/images/anupam2.jpg");
+}
+.chirag{
+    background-image: url("Assets/images/chirag.jpg");
+    background-position: center;
+}
+.jaideep{
+    background-image: url("Assets/images/jaideep.jpg");
+}
+.abhinav{
+    background-image: url("Assets/images/jaideep.jpg");
+}
+.akshat{
+    background-image: url("Assets/images/akshat.jpg");
+    background-position: center;
+}
+.devansh{
+    background-image: url("Assets/images/devansh.jpg");
+}
 
-
+.but{
+    margin-inline: 1rem;
+}
 .profile-info {
     height: 50%;
     width: 60%;
@@ -303,7 +325,7 @@ body {
 }
 
 .profile-name {
-    font-size: 1.5vw;
+    font-size: 2rem;
     margin: 10px auto;
     color: white;
     font-weight: 600;
@@ -368,12 +390,15 @@ p {
     }
 
     .profile-name {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
+        margin: 10px 15px;
     }
-
+    .profile-info p{
+        font-size: 1.3rem;
+    }
     .names {
-        width: 25vw;
-        height: 25vw;
+        width: 35vw;
+        height: 35vw;
     }
 
     .carousel-control-prev {
