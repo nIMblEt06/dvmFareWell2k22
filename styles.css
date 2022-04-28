@@ -125,7 +125,7 @@ body {
 } */
 
 .carousel-inner {
-    width: 32vw !important;
+    width: 40vw !important;
     /* height: 20vw; */
     margin: 0 auto;
     border-radius: 20px;
@@ -153,7 +153,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32vw !important;
+    width: 40vw !important;
     height: 20vw;
     /* background: radial-gradient(167.62% 167.62% at 62.63% -21.21%, #4B0E0E 0%, rgba(75, 14, 14, 0) 100%);
     filter: drop-shadow(0px 3px 30px rgba(0, 0, 0, 0.25));
@@ -265,14 +265,14 @@ body {
     align-items: center;
     padding: 2% 0 2% 4%;
     border-radius: 20px;
-
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.8));
 
     /* background: rgb(237 237 237 / 97%); */
 
 }
 
 .names {
-    width: 16vw;
+    width: 14vw;
     height: 14vw;
     border-radius: 50%;
     background-size: cover;
@@ -325,7 +325,7 @@ body {
 }
 
 .profile-name {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 10px auto;
     color: white;
     font-weight: 600;
@@ -347,6 +347,9 @@ p {
     #backGroundMobile {
         display: block;
     }
+    body{
+        background: linear-gradient(180deg, #000000 0%, #272614 60.72%, #38361D 100%);
+    }
 
     .light.off {
         display: none;
@@ -361,44 +364,44 @@ p {
     }
 
     .carousel-item {
-        height: 35vh;
+        height: 28vh;
         width: 80vw !important;
     }
 
     .carousel-inner {
-        height: 35vh;
+        height: 28vh;
         width: 80vw !important;
-    }
+    }    
 
     .card1 {
-        height: 35vh;
+        height: 28vh;
     }
 
     .carousel-indicators {
-        bottom: -50px !important;
+        bottom: -60px !important;
     }
 
     .content h3 {
-        font-size: 2.5rem;
+        font-size: 3.2rem;
         margin-inline: 1rem;
     }
 
     .info {
-        font-size: 2rem;
+        font-size: 1.9rem;
         line-height: 3rem;
-        margin-top: 4rem;
+        margin-top: 5rem;
     }
 
     .profile-name {
-        font-size: 1.4rem;
-        margin: 10px 15px;
+        font-size: 1.1rem;
+        margin: 10px 10px;
     }
     .profile-info p{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .names {
-        width: 35vw;
-        height: 35vw;
+        width: 25vw;
+        height: 25vw;
     }
 
     .carousel-control-prev {
