@@ -296,7 +296,7 @@ body {
 }
 .abhinav{
     background-image: url("Assets/images/abhinav.jpeg");
-    background-position: center;
+    /* background-position: center center; */
 }
 .akshat{
     background-image: url("Assets/images/akshat.jpg");
@@ -304,6 +304,15 @@ body {
 }
 .devansh{
     background-image: url("Assets/images/devansh.jpg");
+}
+.shivanshu{
+    background-image: url("Assets/images/shivanshu.jpeg");
+}
+.akshit{
+    background-image: url("Assets/images/akshit.jpeg");
+}
+.suyash{
+    background-image: url("Assets/images/suyash.jpeg");
 }
 
 .but{
